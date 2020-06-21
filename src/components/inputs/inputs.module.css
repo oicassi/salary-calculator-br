@@ -1,0 +1,46 @@
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    margin: 5px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 1px lightgray;
+    transition: all 1s;
+}
+
+.flexRow:hover {
+    box-shadow: 0px 0px 3px;
+}
+
+.divInput {
+    width: 23% !important;
+    margin: 1%;
+}
+
+.label {
+    font-weight: 400;
+}
+
+.genericInput {
+    font-weight: bolder;
+    color: #333333 !important;
+}
+
+.inss {
+    color : #E27B02 !important;
+}
+
+.irpf {
+    color : #da190b !important;
+}
+
+.liquid {
+    color : #0C7D8A !important;
+}
+
+
+
+
+

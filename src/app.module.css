@@ -1,0 +1,11 @@
+.mainContainer {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+.title {
+    text-align: center;
+    color: #333333;
+}

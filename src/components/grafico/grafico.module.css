@@ -1,0 +1,44 @@
+.containerGrafico {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+
+.inss {
+    background-color : #E27B02;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    cursor: pointer;
+    font-size: smaller !important;
+    transition: all 0.3s;
+}
+
+.irpf {
+    background-color : #da190b;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    cursor: pointer;
+    font-size: smaller !important;
+    transition: all 0.3s;
+}
+
+.liquid {
+    background-color : #0C7D8A;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    cursor: pointer;
+    font-size: smaller !important;
+    transition: all 0.3s;
+}
