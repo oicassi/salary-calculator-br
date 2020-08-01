@@ -12,7 +12,7 @@ export default class InputSalario extends Component {
                 <input 
                 type="number"
                 id="salarioBruto" 
-                placeholder="Informe o salário bruto"
+                placeholder="Informe o salário bruto (utilize ponto . para separador decimal)"
                 onChange= {this.handleChangeSalario} />
             </div>
         )

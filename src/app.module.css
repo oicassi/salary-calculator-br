@@ -9,3 +9,26 @@
     text-align: center;
     color: #333333;
 }
+
+.footerContainer {
+    margin-top:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.linkFonte {
+    color: #666666;
+    font-size: 0.8rem;
+    transition: all 200ms;
+}
+
+.linkFonte:hover {
+    color: #0051ff;
+    border-bottom: 2px solid #0051ff;
+}
+
+a {
+    text-decoration: none;
+}

@@ -19,21 +19,33 @@ export default class App extends Component {
    * @param {*} salarioBruto Valor do salário bruto recebido pelo compoenente InputSalario
    */
   handldeSalarioBruto = (salarioBruto) => {
-    this.setState({
-      salarioBruto,
-    })
+    let salarioNumber = Number(salarioBruto);
+    if (salarioNumber && salarioNumber >= 0) {
+      this.setState({
+        salarioBruto,
+      })
+    } else {
+      this.setState({
+        salarioBruto : "",
+      })
+    }
   }
 
   render() {
     const { salarioBruto } = this.state;
     const dadosSalarioLiquido = calcAll(salarioBruto);
     return <div className="container">
-      
-        <h1 className={css.title}>Calculadora de salário líquido</h1>
-        <div className={css.mainContainer}>
+
+      <h1 className={css.title}>Calculadora de salário líquido</h1>
+      <div className={css.mainContainer}>
         <InputSalario onInputSalarioChange={this.handldeSalarioBruto} />
         <DisplayValores valores={dadosSalarioLiquido} />
         <Grafico valores={dadosSalarioLiquido} />
+      </div>
+      <div className={css.footerContainer}>
+        <a href="https://www.todacarreira.com/calculo-salario-liquido/" target="_blank">
+          <span className={css.linkFonte}><em>fonte dos cálculos</em></span>
+        </a>
       </div>
     </div>;
   }
